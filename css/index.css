@@ -1,0 +1,35 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; 
+    background: url('/video/Little_Simz_-_Selfish_feat_Cleo_Sol_Official_Video.mp4');
+}
+
+  .logohead{
+    height: 3rem;
+     width: 3rem;
+    z-index: 1;
+}
+
+.toppage{
+  background-color: transparent;
+}
+
+
+
+.video-background {
+  opacity: 0.8;
+  background-color: black;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.video-foreground,
+.video-background iframe {
+ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
