@@ -85,7 +85,7 @@ nav ul li a {
 #fullpage section { height: 100vh; }
 
 .one{
-  justify-content: center.
+  justify-content: center;
 }
 
 
@@ -119,7 +119,13 @@ video {
   
 }
 
+audio{
 
+}
+
+th:hover{
+  color: aqua;
+}
 
 
 
