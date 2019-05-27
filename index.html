@@ -12,181 +12,201 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
     <link rel="icon" type="image/png" href="/favicon/favicon.ico" />
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-
-    
-    <link rel="prefetch" href="preload.html">
-    <link rel="prefetch" href="/css/preload.css">
     <link rel="stylesheet" href="/css/index.css">
-
+    <script src="/js/preload.js"></script>
     <title>Little Simz</title>
 </head>
 
 <body>
 
 
-    <header>
-        <nav>
-            <div class="menu-icon">
-                <i class="fa fa-bars fa-2x"></i>
+
+    <section class="videoback">
+
+        <header>
+            <div class="overlay"></div>
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="/video/Little_Simz_-_Offence_Official_Video.mp4" type="video/mp4">
+            </video>
+
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <h1 class="display-3">Little Simz</h1>
+                        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </section>
+
+    <section class="container discography ">
+
+        <div class="d-flex inline bio">
+
+
+
+            <div class="left">
+                <h1> GREY AREA </h1>
+                <P>
+                    Grey Area est le troisième album studio de la rappeuse britannique Little Simz, sorti le 1ᵉʳ mars
+                    2019. Très bien accueilli par la critique, ce troisième album est un oeuvre significative pour la
+                    jeune artiste de 25 ans qui confirme sa place dans le paysage underground hip-hop londonien.
+                </P>
+            </div>
+            <div class="justify-content-end right">
+                <img src="/image/Little-Simz-Grey-Area.jpg" alt="" class="cover">
             </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="https://www.instagram.com/littlesimz/?hl=fr"><img src="/image/instagram.png" alt=""
-                                class="logo"></a></li>
-                    <li><a href="https://open.spotify.com/artist/6eXZu6O7nAUA5z6vLV8NKI"><img src="/image/spotify.png"
-                                alt="" class="logo"></a></li>
+        </div>
 
-                    <li><a href=https://twitter.com/littlesimz?lang=fr> <img src="/image/twitter.png" alt=""
-                            class="logo"></a></li>
-
-                    <li><a href="https://soundcloud.com/littlesimz"><img src="/image/soundcloud.png" alt=""
-                                class="logo"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+        <div class=" album">
+            <div>
+                <p><a href="https://open.spotify.com/artist/6eXZu6O7nAUA5z6vLV8NKI" class="text-white no-underline">
+                        Découvrez ses albums <img src="/image/arrow.png" alt="" width="9px" height="9px"></a></p>
             </div>
-        </nav>
-    </header>
 
-
-    <div id="fullpage">
-        <section class="one">
-
-            <br>
-            <div class="stage">
-
-                <svg id="demo" xmlns="http://www.w3.org/2000/svg" width="2500" height="1600" viewBox="0 0 1000 800">
-
-                    <defs>
-
-                        <pattern id="slicePattern" patternUnits="userSpaceOnUse" width="1500" height="800" x="0" y="0">
-
-                            <text transform="translate(500 360)" text-anchor="middle" font-size="146" fill="#fff">
-                                LITTLE SIMZ</text>
-
-                        </pattern>
-
-                        <pattern id="cutPattern" patternUnits="userSpaceOnUse" width="1000" height="800" x="0" y="0">
-                            <text transform="translate(500 500)" text-anchor="middle" font-size="90" fill="#fff">GREY
-                                AREA</text>
-                        </pattern>
-
-                    </defs>
-
-                    <g fill="url(#slicePattern)">
-                        <polygon id="slide1" points="0,150 551,150 201,400 0,400" />
-                        <polygon id="slide2" points="549,150 1000,400 999,400 1000,150" />
-                        <polygon points="200,400 550,150 1000,400" />
-                    </g>
-
-                    <g id="strips" fill="url(#cutPattern)">
-                        <rect x="0" y="420" width="1000" height="31" />
-                        <rect x="0" y="450" width="1000" height="21" />
-                        <rect x="0" y="470" width="1000" height="21" />
-                        <rect x="0" y="490" width="1000" height="51" />
-                    </g>
-
-                    <line x1="550" y1="150" x2="200" y2="400" stroke-width="1" stroke="white" />
-                    <line x1="550" y1="150" x2="1000" y2="400" stroke-width="1" stroke="white" />
-
-                </svg>
+            <div class="flex-column coveralbum">
+                <a href="#" class="no-underline">
+                    <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="222px" height="222px">
+                </a>
+                <div class="flex-column">
+                    <a href="#" class="no-underline">
+                        <img src="/image/" alt="" width="105px" height="105px">
+                    </a>
+                    <a href="#" class="no-underline">
+                        <img src="/image/https___images.rapgenius.com_5abb86f277fac3735d726fdfe2e8add2.960x960x1.jpg"
+                            alt="" width="105px" height="105px">
+                    </a>
+                    <a href="#" class="no-underline">
+                        <img src="/image/f09052ff226270bf1d914dacf1063e92.jpg" alt="">
+                    </a>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="downpage">
+
+        <section class="playlist container justify-content-center d-flex inline">
+            <img src="/image/Little-Simz-Grey-Area.jpg" alt="" width="480px" height="480px">
+            <iframe src="https://open.spotify.com/embed/album/4Wwm4xg2748zhYuzDRFTgY&view=coverart" width="400px"
+                height="480px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </section>
+
+        <section class="concert container">
+
+            <h1 class="text-center date">Date De Concerts</h1>
+
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>24/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>All Point East
+                            <br>
+                            <p>London</p>
+                        </td>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom </td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Love Saves The Day
+                            <br>
+                            <p>London</p>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn" href="https://www.google.fr/">Réserver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>01/06 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Primavera Sound
+                        <p>Barcelona</p>
+                        </td>
+                        <td></td>
+                        <td>Spain </td>
+                        <td><button type="button" class="btn">Réserver</button></td>
+                    </tr>
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Parklife Festival 
+                        <br>
+                        <p>Manchester</p>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Schubas Tavern
+                        <br>
+                        <p>Chicago</p>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>  
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Love Saves The Day
+                            <br>
+                            <p>London</p>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Love Saves The Day
+                            <br>
+                            <p>London</p>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Love Saves The Day
+                            <br>
+                            <p>London</p>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>25/05 <img src="/image/91E4W4eDhiL._SS500_.jpg" alt="" width="74px" height="74px">
+                        <td>Love Saves The Day
+                            <br>
+                            <p>London</p>
+                        </td>
+                        <td></td>
+                        <td>United Kingdom</td>
+                        <td> <button type="button" class="btn">Réserver</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
 
 
         </section>
-
-        <section class="two">
-            <div class="container">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Titre</th>
-                            <th>Durée</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Offence</td>
-                            <td>2:49</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Boss</td>
-                            <td>3:06</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <audio controls src="/music/little-simz-selfish-feat-cleo-sol-official.mp3">
-                                Selfish - Cleo-Sol
-                            </audio>
-                            </td>
-
-                            <td>3:46</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Wounds - Chronixx</td>
-                            <td>4:40</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>101 FM</td>
-                            <td>3:16</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Pressure - Little Dragon</td>
-                            <td>3:28</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>Therapy</td>
-                            <td>3:16</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>Sherbet Sunset</td>
-                            <td>4:55</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Flowers - Michael Kiwanuka
-
-                            </td>
-                            <td>3:46</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td>Venom</td>
-                            <td>2:35</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="three">3</section>
-
-        <section class="for">4</section>
-
-        <section class="five">5</section>
-    </div>
-
-
-
-
-
-
-
-    <video autoplay muted loop id="myVideo" a>
-        <source src="/video/Little_Simz_-_Offence_Official_Video.mp4" type="video/mp4">
-    </video>
-    <script src="/js/preload.js"></script>
-    <script src="/js/index.js"></script>
+    </section>
 
 </body>
 
