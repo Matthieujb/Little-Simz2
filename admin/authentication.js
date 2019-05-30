@@ -3,6 +3,17 @@ import config from '../config.js';
 // Initialisation de Firebase
 firebase.initializeApp(config);
 
+
+const newville = document.getElementById('city')
+const newstade = document.getElementById('stade')
+const newpays = document.getElementById('pays')
+const newdate = document.getElementById('date')
+const submit = document.getElementById('btn')
+const newcomplet = document.getElementById('complet')
+const newincomplet = document.getElementById('incomplet')
+
+
+
 // --------------------------------------------
 // Initialisation des gestionnaires d'événement
 // --------------------------------------------
@@ -33,7 +44,7 @@ function emailPasswordLogin(event) {
                 <h3>Vous êtes bien connecté ${email} !</h3>
             `);
         })
-        .catch(function(error) {
+        .catch(function (error) {
             console.log("Une erreur s'est produite", error.message);
 
             $('section#results').html(`
@@ -41,4 +52,46 @@ function emailPasswordLogin(event) {
             `);
         });
 }
+
+
+
+const DateRef = firebase.firestore().collection('Date');
+
+// -- Récupérer les données de nos consoles 
+DateRef.get().then(function (querySnapshot) {
+
+    
+
+    querySnapshot.forEach(function (doc) {
+        const { complet, date, city, pays, stade } = doc.data()
+
+
+        // -- variables de nos éléments(consoles) qui sont dans l'élément doc.date()
+
+
+        console.log(complet);
+
+
+        // -- on append nos éléments
+
+
+        submit.addEventListener('click', e => {
+           
+            DateRef.doc().set({
+                city: newville.value,
+                date: newdate.value,
+                pays: newpays.value,
+                stade: newstade.value,
+                complet: newcomplet.value,
+                incomplet: newincomplet.value,
+                
+            })
+        
+
+    })
+
+});
+})
+
+const newDateRef = firebase.firestore().collection('Date').getElementById('.list');
 

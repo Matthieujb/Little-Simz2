@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: "Bebas Neue";
   src: url("/font/BebasNeue-Regular.otf") format("otf"),
@@ -9,23 +11,76 @@
 }
 
 body{
-  font-family: 'Indie Flower', cursive;
+  font-family: "Bebas Neue";
   background-color: #14161C;
     color:white;
-    
 }
- 
-a{
+
+
+
+img:hover{
+  opacity: 0.5;
+}
+
+
+
+
+.btn1{
+  background-color: #14161C;
+  border-radius: 20px;
   text-decoration: none;
 }
+
+
+
+/*Nav Bar */
+.tmp-menu{
+  position: fixed;
+  width:100%;
+  color: white;
+  padding: 2.15rem 2rem; /* 34.4px 0 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top:0;
+  z-index: 2; 
+  
+  /* Permet de gérer les couches */
+}
+
+
+
+.left span{
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+
 
 
 h1{
   font-family: "Bebas Neue"
 }
 
+h4{
+  font-family: "Bebas Neue";
+  font-size: 29px;
+  padding-top: 180px;
+  color: whitesmoke;
+}
+
+h4 strong{
+font-size: 32px;
+
+}
 p{
-  font-family: "Futura PT"
+  font-family: "bebas Neue"
 }
 
 header {
@@ -65,18 +120,21 @@ header .overlay {
   width: 100%;
   background-color: black;
   opacity: 0.5;
-  z-index: 1;
+  z-index: -10;
+  transition: 1s;
 }
 
 .discography{
   background-color: #14161C;
   width: 100%;
-  height: 1150px;
+ 
+  padding-block-end: 10rem;
   
 }
 
 .bio{
   padding-top: 209.17px;
+  display: inline;
 }
 
 
@@ -86,9 +144,16 @@ header .overlay {
   height: 199.76px;
 }
 
+.left h1{
+  font-size: 72px;
+  padding-block-end: 3rem;
+}
+
 .left p {
   font-size: 24px;
 }
+
+
 
 .right{
   align-content: flex-end;
@@ -115,6 +180,7 @@ header .overlay {
 .downpage{
 
   background: url('/image/Little_Simz_Fond.png');
+  background-size: cover;
   width: auto;
   height: 1800px;
 
@@ -126,10 +192,13 @@ header .overlay {
 .date{
   padding-block-end: 130px;
 }
+
+
+
 table {
   border-collapse: collapse;
   width: 100%;
-  font-family: "Futura PT";
+  font-family: "Bebas Neue";
   height: 300px;
   
 }
@@ -155,11 +224,4 @@ tr:hover {
   z-index: 5;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('/video/Little_Simz_-_Offence_Official_Video.mp4') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
+

@@ -1,101 +1,159 @@
 <!DOCTYPE html>
 
-    <html lang="fr">
+<html lang="fr">
 
-        <head>
-        
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Authentication - Firebase Playground</title>
+<head>
 
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Authentication - Firebase Playground</title>
 
-        </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin.css">
 
-        <body>
+</head>
 
-            <script>window.location.protocol !== 'http:' && document.write('<div class="alert alert-danger mb-0"><b>Attention ! Vous visitez cette page depuis l\'adresse « '+ window.document.URL +' »</b> !<br>Vous devriez utiliser un serveur web HTTP local (localhost) !<br>Pour lancer un serveur web local, ouvrez votre terminal et tapez la commande : <b>npm start</b></div>');</script>
+<body>
 
-            <header>
+    <script>window.location.protocol !== 'http:' && document.write('<div class="alert alert-danger mb-0"><b>Attention ! Vous visitez cette page depuis l\'adresse « ' + window.document.URL + ' »</b> !<br>Vous devriez utiliser un serveur web HTTP local (localhost) !<br>Pour lancer un serveur web local, ouvrez votre terminal et tapez la commande : <b>npm start</b></div>');</script>
 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="/">🔥 &laquo; Retour</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-                
-            </header>
+    <header>
 
-            <main class="container mt-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">🔥 &laquo; Retour</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
 
-                <h1>Authentication</h1>
-                <hr>
+    </header>
 
-                <div class="row">
+    <main class="container mt-3">
 
-               
+        <h1>Authentication</h1>
+        <hr>
 
-                    <div class="col-md-6">
+        <div class="row">
 
-                        <h2 class="mb-4">Connexion par compte</h2>
 
-                        <form class="col col-md-6" id="loginForm">
 
-                            <div class="form-group">
-                                <label for="emailField">Email</label>
-                                <input type="email" class="form-control" id="emailField" placeholder="Enter email">
-                            </div>
+            <div class="col-md-6">
 
-                            <div class="form-group">
-                                <label for="passwordField">Mot de passe</label>
-                                <input type="password" class="form-control" id="passwordField" placeholder="Password">
-                            </div>
+                <h2 class="mb-4">Connexion par compte</h2>
 
-                            <button type="submit" class="btn btn-primary">Se connecter</button>
+                <form class="col col-md-6" id="loginForm">
 
-                        </form>
-
-                    </div>
-
-                </div>
-
-                <hr>
-
-                <section id="results">
-                    <!-- Résultat de l'authentification à placer ici ... -->
-                </section>
-
-            </main>
-
-          
-            <section id="concert">
-
-                <form>
                     <div class="form-group">
-                      <label for="formGroupExampleInput">Example label</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        <label for="emailField">Email</label>
+                        <input type="email" class="form-control" id="emailField" placeholder="Enter email">
                     </div>
+
                     <div class="form-group">
-                      <label for="formGroupExampleInput2">Another label</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                        <label for="passwordField">Mot de passe</label>
+                        <input type="password" class="form-control" id="passwordField" placeholder="Password">
                     </div>
-                  </form>
 
-            </section>
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
 
-            <!-- jQuery et Bootstrap-->
-            <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
-            <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+                </form>
 
-            <!-- SDK Firebase -->
-            <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
-            <script src="admin.js"></script>
-            <script src="authentication.js" type="module"></script>
+            </div>
 
-        </body>
+        </div>
 
-    </html>
+        <hr>
+
+        <section id="results">
+            <!-- Résultat de l'authentification à placer ici ... -->
+        </section>
+
+    </main>
+
+
+    <section id="concert">
+
+        <div class="card d-flex flex-column justify-content-end">
+
+
+
+
+            <label for="date"> Entrez un date de concert:</label>
+            <input type="date" id="date" name="date">
+
+
+            <label for="city"> Entrez une ville de concert:</label>
+            <input type="text" id="city">
+
+            <label for="stade"> Entrez un lieux de concert: </label>
+            <input type="text" id="stade">
+
+
+            <label for="pays"> Entrez le pays:</label>
+            <input type="text" id="pays">
+
+            <div class="button">
+                <button type="submit" id="btn">Envoyer</button>
+            </div>
+
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="complet">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Complet
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="incomplet" >
+                    <label class="form-check-label" for="defaultCheck2" >
+                      Incomplet
+                    </label>
+                  </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="list">
+
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="date"><img src="/assets/Stilness.jpg" alt="" width="74px" height="74px">
+                        <td class="${stade}">
+                            <br>
+                            <p class="city"></p>
+                        </td>
+                        <td></td>
+                        <td class="pays"></td>
+                        <td> <button type="button" class="btn"></button></td>
+                    </tr>
+
+
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </section>
+
+    <!-- jQuery et Bootstrap-->
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+    <!-- SDK Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    
+    <script src="authentication.js" type="module"></script>
+
+</body>
+
+</html>
